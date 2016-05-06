@@ -1,0 +1,253 @@
+<ion-view view-title="Goods">
+  <ion-nav-bar class="bar-light bar-no-bg bar-no-border">
+    <ion-nav-buttons side="left">
+      <a class="button  ion-chevron-left button-clear button-dark padding-left" onclick="history.go(-1);">&nbsp;Back</a>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <a class="button button-clear button-dark item top_button_padding">
+        <i class="ion-ios-more fill-icon"></i>
+      </a>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+
+  <ion-content delegate-handle="goods_list_content" class="stable-bg dark" on-scroll="goods_list_scroll_action()"
+               lazy-scroll>
+
+    <ion-slide-box on-slide-changed="slideHasChanged($index)" class="light-bg">
+      <ion-slide ng-repeat="goods_picture_item in goods_picture_list">
+        <img class="full-image"
+             image-lazy-src="{{goods_picture_item.goods_picture}}">
+      </ion-slide>
+    </ion-slide-box>
+
+    <div class="padding light-bg light-border border-bottom " style="/* border-bottom:1px solid #E0DEDE*/  ">
+      <div class="dark">
+        {{goods_base_info.goods_name}}
+      </div>
+      <div class="h6 assertive">
+        {{goods_base_info.goods_brief}}
+      </div>
+      <h4 class="assertive">
+        <strong>${{goods_price()}}</strong>
+      </h4>
+      <hr class="no-border-top ">
+
+      <div class="small-padding-vertical">
+        <div class="pull-left">
+          Ship Free
+        </div>
+        <div class="pull-right text-right">
+          From HK
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <hr class="no-border-top">
+      <div class="small-padding-vertical">
+        <div class="pull-left">
+          Promotions
+        </div>
+        <div class="pull-right text-right">
+          7% off
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+
+    <div class="padding-vertical">
+    </div>
+
+
+    <div ng-show="show_sku_row()">
+      <div class="padding-left  light-bg light-border border-bottom border-top ">
+        <div class="pull-left padding-vertical">
+          <span ng-repeat="goods_selected_sku_attr_item in goods_selected_sku_attr_list">
+             {{goods_selected_sku_attr_item.name}}
+          </span>
+        </div>
+        <div class="pull-right text-right" style="position:relative">
+
+          <div class="padding-vertical" style="margin-right:33px;">
+          <span class="margin-right assertive" ng-repeat="goods_selected_sku_attr_item in goods_selected_sku_attr_list">
+             {{goods_selected_sku_attr_item.value}}
+          </span>
+          </div>
+
+          <div style="position: absolute; top: -2px; right:-4px; " ng-click="openSpecialAttributesModal()">
+            <a class="button  button-clear button-dark item  ">
+              <i class="ion-ios-more fill-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="padding-vertical">
+      </div>
+    </div>
+
+
+
+    <script id="special_attributes.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="stable-bg no-padding-vertical dark">
+
+            <button class="button button-clear  button-dark">Select color/size</button>
+            <button class="button ion-ios-close-outline button-clear button-dark icon" ng-click="closeSpecialAttributesModal()"></button>
+
+        </ion-header-bar>
+
+        <ion-content>
+          <div class="padding-horizontal dark">
+
+            <table class="table  ">
+              <tr>
+                <th rowspan="3" class="no-padding-bottom no-padding-left no-border-top" style="width:115px;">
+                  <img class="full-image" image-lazy-src="{{goods_base_info.first_picture}}">
+                </th>
+                <td class="no-padding-bottom popup-title no-border-top">{{goods_base_info.goods_name}}</td>
+              </tr>
+              <tr>
+                <td class="no-border-top no-padding-bottom assertive popup-title"><strong>${{goods_price()}}</strong></td>
+              </tr>
+              <tr>
+                <td class="no-border-top no-padding-bottom">
+                  <div class="pull-left padding-right">Selected</div>
+
+                  <div class="pull-left padding-right assertive" ng-repeat="goods_selected_sku_attr_item in goods_selected_sku_attr_list">
+                    {{goods_selected_sku_attr_item.value}}
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <style>
+              .special_attr:nth-last-child(2){ border-bottom:1px solid #E4E4E4; padding-bottom:5px; }
+            </style>
+            <div >
+              <div ng-repeat="goods_sku_attr_item in goods_sku_attr_list" class="special_attr">
+                <h4 class="dark">
+                  {{goods_sku_attr_item['name']}}
+                </h4>
+                <div>
+                    <button class="button button-outline  button-assertive margin-right margin-vertical {{goods_sku_attr_value_item['is_active']}}"
+                            ng-click="select_sku_attr('{{goods_sku_attr_item['name']}}','{{goods_sku_attr_value_item['value']}}')"
+                            ng-repeat="goods_sku_attr_value_item in goods_sku_attr_item['attr_values']">
+                      {{goods_sku_attr_value_item['value']}}
+                    </button>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="padding-vertical">
+          </div>
+          <div class="padding-vertical">
+          </div>
+          <div class="padding-vertical">
+          </div>
+          <div class="padding-vertical">
+          </div>
+        </ion-content>
+
+        <div class="bar bar-footer stable-bg no-padding-vertical  no-padding-horizontal">
+          <style>
+            .modal_action_buttom{ line-height:27px !important; }
+          </style>
+          <table class="table text-center no-margin-bottom bottom-table">
+            <tbody>
+            <tr>
+              <td class="text-white energized-bg vertical-align-middle modal_action_buttom" ng-click="add_cart()">
+                Add cart
+              </td>
+              <td class="text-white assertive-bg vertical-align-middle modal_action_buttom">
+                &nbspBuy Now&nbsp
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </ion-modal-view>
+    </script>
+
+
+    <div ng-include="'templates/goods/evaluate.html'"
+         ng-controller="GoodsEvaluateCtrl">
+    </div>
+
+    <div class="padding-vertical">
+    </div>
+
+    <div ng-include="'templates/goods/shop_info.html'"
+         ng-controller="ShopInfoCtrl">
+    </div>
+
+    <!--
+    <div class="padding-vertical">
+    </div>
+
+    <div ng-include="'templates/goods/recommend.html'"
+         ng-controller="GoodsRecommendCtrl">
+    </div>
+    -->
+
+    <div class="padding-vertical">
+    </div>
+    <div class="padding-vertical">
+    </div>
+    <div class="padding-vertical">
+    </div>
+    <div class="padding-vertical">
+    </div>
+
+
+  </ion-content>
+
+  <style>
+    .foot-button-td{ width:15%; border-right:1px solid #E4E4E4 }
+    .foot-button-td i{ font-size:22px; }
+    .foot-button-td{
+      transition-property:opacity;
+      transition-duration:.1s;
+    }
+    .bottom-table .text-white{
+      transition-property:background-color;
+      transition-duration:5s;
+      transition-delay:2s;
+    }
+    .foot-button-td:active, .bottom-table .text-white:active{ opacity:.2; }
+  </style>
+  <div class="bar bar-footer stable-bg no-padding-vertical  no-padding-horizontal" style="height:52px;">
+    <table class="table text-center no-margin-bottom bottom-table">
+      <tbody>
+      <tr>
+        <td class="no-padding-vertical foot-button-td">
+          <a href="#/chat/talking/89">
+            <i class="ion-ios-bell-outline calm"></i><br><span class="_h6 dark">Talk</span>
+          </a>
+        </td>
+        <td class="no-padding-vertical foot-button-td">
+          <i class="ion-ios-home-outline"></i><br><span class="_h6">Shop</span>
+        </td>
+        <td class="no-padding-vertical foot-button-td">
+          <i class="ion-ios-star-outline"></i><br><span class="_h6">Like</span>
+        </td>
+        <td class="text-white energized-bg vertical-align-middle" ng-click="bottom_add_cart()">
+          Add cart
+        </td>
+        <td class="text-white assertive-bg vertical-align-middle">
+          &nbspBuy now&nbsp
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</ion-view>
+

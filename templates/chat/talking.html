@@ -1,0 +1,201 @@
+<ion-view class="dark">
+  <ion-nav-title>
+    <span class="clean-btn">
+      <style>
+        #top_center_icon{ font-size:15px; color:#ccc }
+      </style>
+        <i class="ion-record small-margin-right" id="top_center_icon"></i>Apple|loken
+    </span>
+  </ion-nav-title>
+  <ion-nav-bar class="bar-light ">
+
+    <ion-nav-buttons side="left">
+      <a class="button  ion-chevron-left button-clear button-dark padding-left" onclick="history.go(-1);">&nbsp;Back</a>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right ">
+      <a class="button button-clear button-dark item top_button_padding">
+        <i class="ion-ios-home-outline fill-icon"></i>
+      </a>
+      <a class="button button-clear button-dark item top_button_padding">
+        <i class="ion-ios-timer-outline fill-icon"></i>
+      </a>
+    </ion-nav-buttons>
+
+
+  </ion-nav-bar>
+
+
+  <ion-content delegate-handle="order_list_content" class="stable-bg" lazy-scroll>
+
+
+    <ion-refresher
+      pulling-text="pull get the history..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <style>
+      .message-history {
+        border-radius: 5px;
+        margin: auto;
+        font-size: 12px;
+      }
+      .message-info {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .message-content-box {
+        border-radius: 5px;
+        position: relative;
+        padding: 15px;
+      }
+
+      .message-reply .message-content-box {
+        background: #aad2ff;
+        margin-right: 60px;
+        float: right;
+      }
+
+      .message-receive .message-content-box {
+        background: #fff;
+        margin-left: 60px;
+        float: left;
+      }
+
+      .message-content-box .arrow {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        border-width: 10px;
+        border-style: solid;
+        position: absolute;
+        top: 10px;
+      }
+
+      .message-reply .message-content-box .arrow {
+        border-color: transparent transparent transparent #aad2ff;
+        right: -20px;
+      }
+
+      .message-receive .message-content-box .arrow {
+        border-color: transparent #fff transparent transparent;
+        left: -20px;
+      }
+
+      .message-content {
+        overflow: hidden;
+      }
+
+      .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        position: absolute;
+        top: 0;
+      }
+
+      .message-receive .user-avatar {
+        left: 0;
+      }
+
+      .message-reply .user-avatar {
+        right: 0;
+      }
+
+
+    </style>
+
+    <div class="message-history padding-vertical">
+
+      <div class="message-{{msg_item['type']}} padding"  ng-repeat="msg_item in message_list">
+        <div class="message-info">
+          <div class="user-info">
+            <img class="user-avatar" src="/img/{{msg_item['type']}}.png">
+          </div>
+          <div class="message-content-box ">
+            <div class="arrow"></div>
+
+            <div class="message-content">{{msg_item['message']}}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </ion-content>
+  <style>
+    .bottom_button{ width:52px !important; line-height:35px !important; font-size:28px !important; }
+    #bottom_input{ width:100%; border:1px solid #ccc; text-indent:15px; border-radius:2px; -webkit-appearance:none; }
+  </style>
+  <ion-footer-bar class="bar bar-footer stable-bg no-padding-vertical  no-padding-horizontal" keyboard-attach
+                  style="height:auto;">
+    <div style="width:100%">
+      <table class="table text-center no-margin-bottom bottom-table">
+        <tbody>
+        <tr>
+          <td class="bottom_button">
+            <i class="ion-happy-outline clean-btn text-muted">
+
+            </i>
+          </td>
+          <td>
+            <form ng-submit="send_msg()">
+              <input value="{{template_data['need_send_msg']}}" ng-model="template_data['need_send_msg']" ng-focus="hide_addition_button()"
+                     id="bottom_input" type="text">
+            </form>
+          </td>
+          <td class="bottom_button" ng-click="show_addition_button()">
+            <i class="ion-ios-plus-outline clean-btn text-muted">
+            </i>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <style>
+        .addition_row{
+          background:#EFEFEF;
+        }
+        .addition_row .col{ text-align:center }
+        .addition_row i{ font-size:50px; }
+      </style>
+
+      <div ng-show="template_data['show_addition_button']">
+        <div class="row addition_row ">
+          <div class="col">
+            <i class="ion-images positive "></i><br>
+            Picture
+          </div>
+          <div class="col">
+            <i class="ion-ios-camera-outline assertive  "></i><br>
+            photograph
+          </div>
+          <div class="col">
+            <i class="ion-clipboard energized "></i><br>
+            My order
+          </div>
+          <div class="col">
+            <div style="-webkit-transform:scaleX(-1);">
+              <i class="ion-ios-refresh-outline royal "></i>
+            </div>
+            History
+          </div>
+        </div>
+        <div class="row addition_row">
+          <div class="col col-25">
+            <i class="ion-android-favorite-outline assertive "></i><br>
+            Comment
+          </div>
+          <div class="col col-25">
+            <i class="ion-ios-mic-outline balanced "></i><br>
+            Voice
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-footer-bar>
+
+
+</ion-view>
+
