@@ -1,7 +1,7 @@
 # hybird_shopping_app
 The shopping app for buyer,It is build by Ionic.
 
-This project is not finished.
+This project is not finished.Because I have no time.I need find a job now.
 
 It is my code.I write the all code by myself.And I design the page.
 
@@ -20,5 +20,7 @@ These are the picture of this project.
  
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/order-list.png)
 
-
+#The server is built at Golang and PHP,here is the server code link.
+https://github.com/lokenetwork/shopping-chat-server
+https://github.com/lokenetwork/shopping-php-server
 
