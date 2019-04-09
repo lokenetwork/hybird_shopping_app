@@ -1,11 +1,6 @@
-# hybird_shopping_app
-The shopping app for buyer,It is build by Ionic.
+# 买买提APP
+客户端APP采用ionic angular框架开发，跨平台的，支持ios跟android。websocket采用protobuf作为通信协议。
 
-This project is not finished.Because I have no time.I need find a job now.
-
-It is my code.I write the all code by myself.And I design the page.
-
-These are the pictures of this project.
 
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/hot-page.png)
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/goods-detail-1.png)
@@ -20,25 +15,13 @@ These are the pictures of this project.
  
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/order-list.png)
 
-#The server is built at Golang and PHP,here is the server code link.
-https://github.com/lokenetwork/shopping-chat-server
 
-https://github.com/lokenetwork/shopping-php-server
+#相关项目地址
+PHP接口服务器：https://github.com/lokenetwork/shopping-php-server
+GO聊天服务器：https://github.com/lokenetwork/shopping-chat-server
+通行证服务器（单点登录）：https://github.com/lokenetwork/passport-shopping-system
+商家后台：https://github.com/lokenetwork/shop-manage
+总平台后台：https://github.com/lokenetwork/admin-shopping
 
-# The whole shopping system code link
-
-https://github.com/lokenetwork/hybird_shopping_app
-
-https://github.com/lokenetwork/shopkeeper_ionic_client
-
-https://github.com/lokenetwork/shopping-php-server
-
-https://github.com/lokenetwork/shopping-chat-server
-
-https://github.com/lokenetwork/passport-shopping-system
-
-https://github.com/lokenetwork/shop-manage
-
-https://github.com/lokenetwork/admin-shopping
 
 
