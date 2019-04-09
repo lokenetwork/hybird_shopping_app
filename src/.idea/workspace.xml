@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62f21c55-3500-434d-bd0f-3a65cf863d9a" name="Default Changelist" comment="add data">
+      <change beforePath="$PROJECT_DIR$/app/cloth/cloth.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/cloth/cloth.page.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shop/shop.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4440">
+              <caret line="332" selection-start-line="332" selection-end-line="332" />
+              <folding>
+                <element signature="n#!!block;n#openSearchModal#0;n#ShopPage#0" />
+                <element signature="n#!!block;n#init_map_app#0;n#ShopPage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dianpu/dianpu.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="63" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/detail/detail.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="82" column="8" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="8" />
+              <folding>
+                <element signature="e#391#434#0" expanded="true" />
+                <element signature="n#!!block;n#choose_sku#0;n#DetailPage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/cloth/cloth.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#71#0" expanded="true" />
+                <element signature="n#!!block;n#openSearchModal#0;n#ClothPage#0" />
+                <element signature="n#!!block;n#doRefresh#0;n#ClothPage#0" />
+                <element signature="n#!!block;n#loadData#0;n#ClothPage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shop/shop.page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="n#style#0;n#ion-button#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/chat/chat.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="134" column="2" selection-start-line="134" selection-start-column="2" selection-end-line="141" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!block;n#ngOnInit#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#load_next_history_chat#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#send_text_message#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#selectImage#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#readFile#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#uploadImageData#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#takePicture#0;n#ChatPage#0" />
+                <element signature="n#!!block;n#presentToast#0;n#ChatPage#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>正</find>
+      <find>token</find>
+      <find>load</find>
+      <find>loadData</find>
+      <find>正在</find>
+      <find>rec</find>
+      <find>appModule</find>
+      <find>history_page</find>
+      <find>no_more_history</find>
+      <find>console.log</find>
+      <find>event</find>
+      <find>is_loading_history</find>
+      <find>is_loading_data</find>
+      <find>websocket_init</find>
+      <find>chat_info</find>
+      <find>chatList</find>
+      <find>Detail</find>
+      <find>init_data</find>
+      <find>doRefresh</find>
+      <find>select_session</find>
+      <find>rabbit</find>
+      <find>shop_id</find>
+      <find>shop</find>
+      <find>scheme</find>
+      <find>InAppBrowser</find>
+      <find>InAppBrowserOriginal</find>
+      <find>iosApp</find>
+      <find>open_map</find>
+      <find>shopinfo</find>
+      <find>alert</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>example-modal.page</replace>
+      <replace>ExampleModalPage</replace>
+      <replace>SearchModalPage</replace>
+      <replace>search-modal</replace>
+      <replace>ShopPage</replace>
+      <replace>shop</replace>
+      <replace>type_id</replace>
+      <replace>15%</replace>
+      <replace>,this.postCfg</replace>
+      <replace>dianpu</replace>
+      <replace>Dianpu</replace>
+      <replace>DianpuPage</replace>
+      <replace>Cuxiao</replace>
+      <replace>CuxiaoPage</replace>
+      <replace>cuxiao</replace>
+      <replace>Login</replace>
+      <replace>login</replace>
+      <replace>Me</replace>
+      <replace>EditnamePage</replace>
+      <replace>editname</replace>
+      <replace>Editname</replace>
+      <replace>Collect</replace>
+      <replace>distance</replace>
+      <replace>Distance</replace>
+      <replace>Password</replace>
+      <replace>Chat</replace>
+      <replace>chat</replace>
+      <replace>Home</replace>
+      <replace>loken-test</replace>
+      <replace>Session</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\new_cloth_system\cloth_buyers_client_android\node_modules</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/editname-modal/editname-modal.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/editname-modal/editname-modal.page.ts" />
+        <option value="$PROJECT_DIR$/app/search-modal/search-modal.page.ts" />
+        <option value="$PROJECT_DIR$/app/editname/editname.page.ts" />
+        <option value="$PROJECT_DIR$/app/me/me.module.ts" />
+        <option value="$PROJECT_DIR$/app/collect/collect.module.ts" />
+        <option value="$PROJECT_DIR$/app/collect/collect.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/collect/collect.page.html" />
+        <option value="$PROJECT_DIR$/app/distance-modal/distance-modal.module.ts" />
+        <option value="$PROJECT_DIR$/app/distance-modal/distance-modal.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/collect/collect.page.ts" />
+        <option value="$PROJECT_DIR$/app/distance-modal/distance-modal.page.html" />
+        <option value="$PROJECT_DIR$/app/password-modal/password-modal.module.ts" />
+        <option value="$PROJECT_DIR$/app/password-modal/password-modal.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/editname-modal/editname-modal.page.html" />
+        <option value="$PROJECT_DIR$/app/password-modal/password-modal.page.html" />
+        <option value="$PROJECT_DIR$/app/password-modal/password-modal.page.ts" />
+        <option value="$PROJECT_DIR$/app/distance-modal/distance-modal.page.ts" />
+        <option value="$PROJECT_DIR$/app/tabs/tabs.page.ts" />
+        <option value="$PROJECT_DIR$/app/dianpu/dianpu.page.html" />
+        <option value="$PROJECT_DIR$/../package.json" />
+        <option value="$PROJECT_DIR$/app/protos/message.d.ts" />
+        <option value="$PROJECT_DIR$/main/protobuf/Message.proto" />
+        <option value="$PROJECT_DIR$/app/chat/chat.module.ts" />
+        <option value="$PROJECT_DIR$/app/chat/chat.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/chat/chat.page.scss" />
+        <option value="$PROJECT_DIR$/app/tabs/tabs.router.module.ts" />
+        <option value="$PROJECT_DIR$/app/home/home.module.ts" />
+        <option value="$PROJECT_DIR$/app/home/home.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/home/home.page.scss" />
+        <option value="$PROJECT_DIR$/app/login/login.page.ts" />
+        <option value="$PROJECT_DIR$/app/detail/detail.page.html" />
+        <option value="$PROJECT_DIR$/app/home/home.page.html" />
+        <option value="$PROJECT_DIR$/app/home/home.page.ts" />
+        <option value="$PROJECT_DIR$/app/me/me.page.ts" />
+        <option value="$PROJECT_DIR$/app/cloth/cloth.page.html" />
+        <option value="$PROJECT_DIR$/app/session/session.module.ts" />
+        <option value="$PROJECT_DIR$/app/session/session.page.spec.ts" />
+        <option value="$PROJECT_DIR$/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/app/me/me.page.html" />
+        <option value="$PROJECT_DIR$/app/tabs/tabs.page.html" />
+        <option value="$PROJECT_DIR$/app/chat/chat.page.ts" />
+        <option value="$PROJECT_DIR$/app/session/session.page.ts" />
+        <option value="$PROJECT_DIR$/app/session/session.page.html" />
+        <option value="$PROJECT_DIR$/app/chat/chat.page.html" />
+        <option value="$PROJECT_DIR$/app/detail/detail.page.ts" />
+        <option value="$PROJECT_DIR$/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/app/shop/shop.page.html" />
+        <option value="$PROJECT_DIR$/app/shop/shop.page.ts" />
+        <option value="$PROJECT_DIR$/app/dianpu/dianpu.page.ts" />
+        <option value="$PROJECT_DIR$/app/cloth/cloth.page.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" xdebug_force_break_when_no_path_mapping="false" />
+  <component name="PhpXdebugProxy" ide_key="phpStorm" host="localhost" port="80" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="26" />
+    <option name="y" value="30" />
+    <option name="width" value="1219" />
+    <option name="height" value="953" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="cloth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node_modules" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="options.lastSelected" value="configurable.group.appearance" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ts.external.directory.path" value="D:\PhpStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\assets" />
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\app" />
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\main\protobuf" />
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\app\editname" />
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\assets\icon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\app\assets\img" />
+      <recent name="E:\new_cloth_system\cloth_buyers_client_android\src\app\login" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62f21c55-3500-434d-bd0f-3a65cf863d9a" name="Default Changelist" comment="" />
+      <created>1553243106579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553243106579</updated>
+      <workItem from="1553243108090" duration="15723000" />
+      <workItem from="1553265492009" duration="599000" />
+      <workItem from="1553311316539" duration="6905000" />
+      <workItem from="1553334115150" duration="16710000" />
+      <workItem from="1553360910124" duration="93000" />
+      <workItem from="1553400547282" duration="18665000" />
+      <workItem from="1553427235996" duration="9665000" />
+      <workItem from="1553480470450" duration="1414000" />
+      <workItem from="1553908035676" duration="33112000" />
+      <workItem from="1553960212663" duration="7164000" />
+      <workItem from="1553994210379" duration="13626000" />
+      <workItem from="1554084968189" duration="995000" />
+      <workItem from="1554089457128" duration="585000" />
+      <workItem from="1554118235402" duration="16281000" />
+      <workItem from="1554166595980" duration="12074000" />
+      <workItem from="1554184507314" duration="6865000" />
+      <workItem from="1554196295888" duration="2402000" />
+      <workItem from="1554200869135" duration="12962000" />
+      <workItem from="1554250595830" duration="599000" />
+      <workItem from="1554266595638" duration="374000" />
+      <workItem from="1554281176094" duration="233000" />
+      <workItem from="1554356506508" duration="15618000" />
+      <workItem from="1554457860829" duration="598000" />
+      <workItem from="1554518156115" duration="3945000" />
+      <workItem from="1554600380795" duration="1312000" />
+      <workItem from="1554614195556" duration="13029000" />
+      <workItem from="1554646728896" duration="2662000" />
+      <workItem from="1554686877978" duration="599000" />
+    </task>
+    <task id="LOCAL-00001" summary="add data">
+      <created>1553346586830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553346586830</updated>
+    </task>
+    <task id="LOCAL-00002" summary="个人中心完成60%">
+      <created>1553961112150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553961112150</updated>
+    </task>
+    <task id="LOCAL-00003" summary="收藏完成">
+      <created>1554001854658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554001854658</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add data">
+      <created>1554128751481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554128751481</updated>
+    </task>
+    <task id="LOCAL-00005" summary="图片上传完成。">
+      <created>1554212767151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554212767151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="214809000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="26" y="30" width="1219" height="953" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19154443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.6137106" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="LuaCheck" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.31343284" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20095949" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.6137106" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="LuaCheck" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/.." />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="个人中心完成60%" />
+    <MESSAGE value="收藏完成" />
+    <MESSAGE value="add data" />
+    <MESSAGE value="图片上传完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片上传完成。" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/cloth/cloth.page.ts</url>
+          <line>88</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/me/me.page.ts</url>
+          <line>74</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/password-modal/password-modal.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/distance-modal/distance-modal.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/distance-modal/distance-modal.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/editname-modal/editname-modal.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@ionic-native/geolocation/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tabs/tabs.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dianpu/dianpu.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/ng-socket-io/dist/src/socket-io.service.d.ts" />
+    <entry file="file://$PROJECT_DIR$/app/protos/message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!block;n#scripts#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/protobuf/Message.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/protos/message.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chat/chat.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chat/chat.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login/login.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login/login.page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chat/chat.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tabs/tabs.router.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tab2/tab2.page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/editname-modal/editname-modal.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#ion-button#0;n#ion-col#0;n#ion-row#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="5078" column="4" selection-start-line="5078" selection-start-column="4" selection-end-line="5078" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+            <element signature="n#!!block;n#loadStoredImages#0;n#HomePage#0" />
+            <element signature="n#!!block;n#selectImage#0;n#HomePage#0" />
+            <element signature="n#!!block;n#takePicture#0;n#HomePage#0" />
+            <element signature="n#!!block;n#deleteImage#0;n#HomePage#0" />
+            <element signature="n#!!block;n#uploadImageData#0;n#HomePage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/session/session.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/session/session.page.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/me/me.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-item-divider#0;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-item-divider#1;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-button#0;n#ion-col#0;n#ion-row#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tabs/tabs.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login/login.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="91" column="3" lean-forward="true" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="71" />
+          <folding>
+            <element signature="e#422#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/me/me.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cloth/cloth.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#ion-note#0;n#ion-label#0;n#ion-col#0;n#ion-row#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shoper.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chat/chat.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#ion-buttons#1;n#ion-toolbar#0;n#ion-header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-col#0;n#ion-row#0;n#ion-list#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-col#3;n#ion-row#0;n#ion-list#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-col#5;n#ion-row#0;n#ion-list#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-col#6;n#ion-row#0;n#ion-list#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-grid#0;n#ion-footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/detail/detail.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="82" column="79" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#ion-buttons#1;n#ion-toolbar#0;n#ion-header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-row#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/session/session.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/session/session.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@ionic-native/app-availability/ngx/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@ionic-native/in-app-browser/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="166" column="55" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/@ionic-native/app-availability/ngx/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1730">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shop/shop.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+          <folding>
+            <element signature="n#!!block;n#openSearchModal#0;n#ShopPage#0" />
+            <element signature="n#!!block;n#init_map_app#0;n#ShopPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dianpu/dianpu.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="63" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cloth/cloth.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+            <element signature="n#!!block;n#openSearchModal#0;n#ClothPage#0" />
+            <element signature="n#!!block;n#doRefresh#0;n#ClothPage#0" />
+            <element signature="n#!!block;n#loadData#0;n#ClothPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shop/shop.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#style#0;n#ion-button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chat/chat.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="134" column="2" selection-start-line="134" selection-start-column="2" selection-end-line="141" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#ngOnInit#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#load_next_history_chat#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#send_text_message#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#selectImage#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#readFile#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#uploadImageData#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#takePicture#0;n#ChatPage#0" />
+            <element signature="n#!!block;n#presentToast#0;n#ChatPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/detail/detail.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="8" />
+          <folding>
+            <element signature="e#391#434#0" expanded="true" />
+            <element signature="n#!!block;n#choose_sku#0;n#DetailPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

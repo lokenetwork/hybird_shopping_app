@@ -1,0 +1,66 @@
+<ion-header  text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/tabs/me"></ion-back-button>
+    </ion-buttons>
+    <ion-title>我的收藏</ion-title>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon slot="icon-only" name=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新"
+      refreshingSpinner="circles"
+      refreshingText="正在加载...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngFor="let item of items ">
+    <ion-row>
+      <ion-col *ngFor="let data of item " [routerLink]="['/detail']" [queryParams]="{id:data.goods_id}"  >
+        <div style="min-height:175px;">
+          <ion-img [src]="data.first_picture"></ion-img>
+        </div>
+
+        <ion-label>
+          <ion-note color="dark" style="font-size:14px;">{{data.goods_name}}</ion-note>
+        </ion-label>
+
+        <div style="padding-top:5px;padding-bottom:5px;">
+          <ion-note color="danger">￥{{data.goods_price}}</ion-note>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)" *ngIf="no_more === false" >
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="正在加载...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="no_more === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        没有更多了！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="collect_nothing === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        没有收藏商品！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

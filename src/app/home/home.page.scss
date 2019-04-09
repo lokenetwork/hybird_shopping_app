@@ -1,0 +1,34 @@
+page-home {
+
+  .scroll-content {
+    //background-color: map-get($colors, light);
+  }
+
+  textarea {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    background-color: #fff;
+    font-size: 1.2em;
+    resize: none;
+    border: none;
+  }
+
+  ion-item {
+    //background-color: map-get($colors, light) !important;
+  }
+
+  .chat-bubble {
+
+    width: 65%;
+    overflow: hidden;
+
+  }
+
+  .chat-message {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    white-space: normal;
+  }
+
+}

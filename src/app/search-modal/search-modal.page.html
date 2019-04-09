@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{modalTitle}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-list lines="none">
+
+    <!-- Animated Searchbar -->
+    <ion-searchbar animated [(ngModel)]="search_name" autocorrect="off" placeholder="请输入关键词"></ion-searchbar>
+
+    <ion-item *ngIf="show_price === true" >
+      <ion-text>价格区间:</ion-text>
+    </ion-item>
+
+    <ion-item *ngIf="show_price === true" >
+      <ion-range dualKnobs="true" min="0" max="2000" pin="true" [(ngModel)]="saturation" color="secondary">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">2000</ion-label>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
+
+  <div style="margin-left:10px; margin-right:10px;">
+    <ion-button expand="block" (click)="search()">确定</ion-button>
+  </div>
+
+
+  <!--
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>热门搜索:</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Angola</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Argentina</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Armenia</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Angola</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Argentina</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Armenia</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Angola</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Argentina</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Armenia</ion-label>
+    </ion-item>
+  </ion-item-group>
+  -->
+
+</ion-content>

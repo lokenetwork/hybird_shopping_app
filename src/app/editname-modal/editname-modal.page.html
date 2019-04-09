@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{modalTitle}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-item >
+    <ion-label position="fixed">昵称</ion-label>
+    <ion-input  [(ngModel)]="nick_name" ></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col class="ion-padding-horizontal ion-margin-vertical" >
+      <ion-button expand="block" (click)="submit()" color="primary" style="height: 40px;font-size: 16px;" >确定</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

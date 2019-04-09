@@ -1,0 +1,99 @@
+<ion-header text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>商品详情</ion-title>
+    <ion-buttons slot="end" style="width:66px;">
+      <ion-button>
+        <ion-icon slot="icon-only" name=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-slides pager="true" [options]="slideOpts" style="min-height:375px">
+    <ion-slide *ngFor="let item of goods_img ">
+      <ion-img [src]="item"></ion-img>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-row style="min-height:85px">
+    <ion-col>
+      <ion-label>
+        <ion-note color="dark">{{goods_info.goods_name}}</ion-note>
+      </ion-label>
+      <div style="padding-top:5px;padding-bottom:5px;">
+        <ion-label>
+          <ion-note color="danger" style="font-size:17px;">￥{{goods_info.goods_price}}</ion-note>
+        </ion-label>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-label>
+        <ion-note color="dark">所有规格：</ion-note>
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row  style="min-height:50px">
+    <ion-col>
+      <ion-chip *ngFor="let sku_item of sku " color="{{sku_item.sku_color}}" (click)="choose_sku(sku_item.sku_id);">
+        <ion-label>{{sku_item.sku_name}}</ion-label>
+      </ion-chip>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-label>
+        <ion-note color="dark">商品介绍：</ion-note>
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+      <div [innerHTML]="intro">
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ion-padding">
+    <ion-col>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-padding">
+    <ion-col>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button  [routerLink]="['/chat']"  [queryParams]="{shop_id:goods_info.shop_id}">
+    <ion-icon name="chatboxes"></ion-icon>
+    <ion-label>咨询</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button [routerLink]="['/shop']" [queryParams]="{id:goods_info.shop_id}">
+    <ion-icon name="home"></ion-icon>
+    <ion-label>进入店铺</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button (click)="collect()">
+    <ion-icon name="heart-empty" *ngIf="appModule.like_goods === false" ></ion-icon>
+    <ion-icon name="heart" *ngIf="appModule.like_goods === true" ></ion-icon>
+    <ion-label>收藏</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+

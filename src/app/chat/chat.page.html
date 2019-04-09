@@ -1,0 +1,102 @@
+<ion-header  text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{shop_info.shop_name}}</ion-title>
+    <ion-buttons slot="end" style="width:59px;">
+      <ion-button  [routerLink]="['/shop']" [queryParams]="{id:shop_id}" >
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+
+  <ion-infinite-scroll threshold="10px" (ionInfinite)="load_next_history_chat($event)" *ngIf="no_more_history === false"  position="top" >
+    <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="正在加载历史信息...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="no_more_history === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        没有更多消息了！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid style="margin-bottom:80px;" >
+    <ion-list class="chat-list" no-lines>
+    <ion-row align-items-center class="ion-margin-vertical" *ngFor="let chat_info of chats"  >
+        <ion-col size="2" text-center *ngIf="chat_info. from== 'shoper' && chat_info. messageType== 'text'">
+          <img style="width:45px;" src="./assets/rabbit.png">
+        </ion-col>
+        <ion-col size="8"  *ngIf="chat_info. from== 'shoper' && chat_info. messageType== 'text' ">
+          <ion-note color="Dark">{{chat_info.content}}</ion-note>
+        </ion-col>
+
+      <ion-col size="8" text-right offset="2" *ngIf="chat_info. from== 'buyer' && chat_info. messageType== 'text' ">
+        <ion-note color="Dark">{{chat_info.content}}</ion-note>
+      </ion-col>
+      <ion-col size="2" text-center *ngIf="chat_info. from== 'buyer' && chat_info. messageType== 'text'">
+        <img style="width:45px;" src="./assets/person.png">
+      </ion-col>
+
+      <ion-col size="8" text-right offset="2" *ngIf="chat_info. from== 'buyer' && chat_info. messageType== 'img' ">
+        <ion-img style="" [src]="chat_info.content">
+        </ion-img>
+      </ion-col>
+      <ion-col size="2" text-center *ngIf="chat_info. from== 'buyer' && chat_info. messageType== 'img' ">
+        <img style="width:45px;" src="./assets/person.png">
+      </ion-col>
+
+      <ion-col size="2" text-center *ngIf="chat_info. from== 'shoper' && chat_info. messageType== 'img' ">
+        <img style="width:45px;" src="./assets/rabbit.png">
+      </ion-col>
+      <ion-col size="8" text-right *ngIf="chat_info. from== 'shoper' && chat_info. messageType== 'img' ">
+        <ion-img style="" [src]="chat_info.content">
+        </ion-img>
+      </ion-col>
+
+    </ion-row>
+    </ion-list>
+
+  </ion-grid>
+
+</ion-content>
+<ion-footer  *ngIf="appModule.websocket_is_connect == false">
+  <ion-grid style="background:#f3f3f3" >
+    <ion-row align-items-center>
+      <ion-col >
+          连接已断开~~
+      </ion-col>
+      <ion-col size="4" text-right>
+        <ion-button  color="danger" (click)="reconnect_ws()" >
+            重新连接
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
+<ion-footer>
+  <ion-grid style="background:#f3f3f3" >
+    <ion-row>
+      <ion-col size="2">
+        <ion-button style="width: 50px;" color="light" (click)="selectImage()" >
+          <ion-icon name="camera" ></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="8">
+        <ion-input style="border:1px solid #dddddd; background:#fff" [(ngModel)]="input_text"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button style="width: 50px;" color="light" (click)="send_text_message()" >
+             发送
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

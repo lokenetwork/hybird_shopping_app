@@ -1,0 +1,58 @@
+<ion-header text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>我的会话</ion-title>
+    <ion-buttons slot="end" style="width:66px;">
+      <ion-button>
+        <ion-icon slot="icon-only" name=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="下拉刷新"
+          refreshingSpinner="circles"
+          refreshingText="正在加载...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <ion-item (click)="select_session(session_info.shop_id)"  *ngFor="let session_info of session_list"  >
+      <ion-avatar slot="start">
+        <img src="{{session_info.logo}}">
+      </ion-avatar>
+      <ion-label >
+        <h1>{{session_info.shop_name}}</h1>
+        <p *ngIf="session_info. client_read == 0">
+          <ion-note color="danger">有新信息</ion-note>
+        </p>
+      </ion-label>
+      <ion-icon name="arrow-forward" end></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button  [routerLink]="['/tabs/cloth']" >
+    <ion-icon name="shirt"></ion-icon>
+    <ion-label>附近服装</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button [routerLink]="['/tabs/dianpu']" >
+    <ion-icon name="home"></ion-icon>
+    <ion-label>附近店铺</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button [routerLink]="['/tabs/me']" >
+    <ion-icon name="person"></ion-icon>
+    <ion-label>个人中心</ion-label>
+  </ion-tab-button>
+
+</ion-tab-bar>

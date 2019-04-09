@@ -1,0 +1,74 @@
+<ion-header  text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>个人中心</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="edit_name()">
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-grid text-center style="margin-top:35px">
+    <ion-row>
+      <ion-col>
+        <img style="width:100px;" src="./assets/rabbit.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Item Dividers in a List -->
+  <ion-list>
+    <ion-item-divider style="background:#f2f2f2;border: 0px;">
+      <ion-label>
+        个人信息
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item lines="full">
+      <ion-label>账号</ion-label>
+      <ion-label slot="end" text-right  >{{appModule.account}}</ion-label>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label>昵称</ion-label>
+      <ion-label slot="end" text-right  >{{appModule.nick_name}}</ion-label>
+    </ion-item>
+
+    <ion-item-divider style="background:#f2f2f2;border: 0px;">
+      <ion-label>
+        其他功能
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item lines="full" detail [routerLink]="['/session']">
+      <ion-label>我的会话</ion-label>
+    </ion-item>
+    <ion-item lines="full" detail [routerLink]="['/collect']">
+      <ion-label>我的收藏</ion-label>
+    </ion-item>
+
+    <ion-item lines="full" detail (click)="edit_distance()">
+      <ion-label>范围半径</ion-label>
+    </ion-item>
+
+    <ion-item lines="full" detail (click)="edit_password()">
+      <ion-label>修改密码</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-row>
+    <ion-col class="ion-padding-horizontal ion-margin-vertical" >
+      <ion-button expand="block" color="danger" style="height: 40px;font-size: 16px;"  (click)="logout()">退出登录</ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

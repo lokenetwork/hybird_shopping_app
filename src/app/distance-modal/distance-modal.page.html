@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{modalTitle}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text color="danger">
+          <h4 >通过设置范围半径可以扩大或缩小附近商品的范围。单位：公里（km）</h4>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item  style="">
+    <ion-label position="fixed">半径范围</ion-label>
+    <ion-input  [(ngModel)]="distance" ></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col class="ion-padding-horizontal ion-margin-vertical" >
+      <ion-button expand="block" (click)="submit()" color="primary" style="height: 40px;font-size: 16px;" >确定</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

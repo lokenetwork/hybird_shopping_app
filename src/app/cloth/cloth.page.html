@@ -1,0 +1,83 @@
+<ion-header  text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>附近服装</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openSearchModal()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新定位"
+      refreshingSpinner="circles"
+      refreshingText="正在加载...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item-divider color="light" justify-content-center *ngIf="search_word_dispaly === true" class="ion-padding-end ">
+      <ion-label>
+        搜索关键词:{{search_word}}
+      </ion-label>
+      <ion-icon color="danger" (click)="clearSearch()" slot="end" name="close-circle-outline"></ion-icon>
+  </ion-item-divider>
+
+  <div *ngFor="let item of items ">
+    <ion-row>
+      <ion-col *ngFor="let data of item " [routerLink]="['/detail']" [queryParams]="{id:data.goods_id}"  >
+        <div style="min-height:175px;">
+          <ion-img [src]="data.first_picture"></ion-img>
+        </div>
+
+        <ion-label>
+          <ion-note color="dark" style="font-size:14px;">{{data.goods_name}}</ion-note>
+        </ion-label>
+
+        <div style="padding-top:5px;padding-bottom:5px;">
+          <ion-note color="danger">￥{{data.goods_price}}</ion-note>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)" *ngIf="no_more === false" >
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="正在加载...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="no_more === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        没有更多了！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="search_nothing === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        搜索不到附近商品！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center ion-padding" *ngIf="near_no_goods === true" >
+    <ion-col width-100 center>
+      <ion-label color="danger">
+        附近没有商品，您可以前往个人中心扩大范围半径！
+      </ion-label>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

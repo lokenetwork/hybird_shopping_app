@@ -1,0 +1,43 @@
+<ion-content class="bg-style">
+
+  <ion-grid text-center style="margin-top:50px">
+    <ion-row>
+      <ion-col>
+        <img style="width:120px;" src="./assets/rabbit.png">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid text-center class="ion-padding-horizontal" style="padding-top:0px" >
+    <ion-row>
+      <ion-col  >
+        <ion-item style="color: #ffff;">
+          <ion-label position="floating">账号（手机）</ion-label>
+          <ion-input   [(ngModel)]="account"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-item style="color: #ffff;">
+          <ion-label position="floating">密码</ion-label>
+          <ion-input type="password"   [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-padding-horizontal ion-margin-vertical" >
+        <ion-button expand="block" color="success" style="height: 40px;font-size: 16px;"  (click)="login()">登录</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-padding-horizontal ion-margin-vertical" style="color:white">
+        忘记密码？
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+

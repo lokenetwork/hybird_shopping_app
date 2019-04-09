@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title >1附近服装</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openModal()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <ion-virtual-scroll [items]="items" approxItemHeight="300px">
+
+
+    <ion-row *virtualItem="let item; let itemBounds = bounds;">
+
+
+      <ion-col>
+        <div style="min-height:228px;">
+          <ion-img [src]="item.imgSrc"></ion-img>
+        </div>
+
+        <ion-label>
+          <ion-note color="dark" style="font-size:14px;">{{item.name}}</ion-note>
+        </ion-label>
+
+        <div style="padding-top:5px;padding-bottom:5px;">
+          <ion-note color="danger">￥125.56</ion-note>
+        </div>
+      </ion-col>
+
+
+      <ion-col>
+        <div style="min-height:228px;">
+
+          <ion-img [src]="item.imgSrc"></ion-img>
+        </div>
+
+        <ion-label>
+          <ion-note color="dark" style="font-size:14px;">{{item.name}}</ion-note>
+        </ion-label>
+
+        <div style="padding-top:5px;padding-bottom:5px;">
+          <ion-note color="danger">￥125.56</ion-note>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+
+  </ion-virtual-scroll>
+
+</ion-content>

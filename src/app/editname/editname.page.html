@@ -1,0 +1,28 @@
+<ion-header  text-center>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/tabs/dianpu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>修改昵称</ion-title>
+    <ion-buttons slot="end" style="margin-right:15px;">
+      <ion-button>
+        <ion-icon slot="icon-only" name=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-item  style="margin-top:15px;">
+    <ion-label position="fixed">昵称</ion-label>
+    <ion-input  [(ngModel)]="nick_name" ></ion-input>
+  </ion-item>
+
+
+  <ion-row>
+    <ion-col class="ion-padding-horizontal ion-margin-vertical" >
+      <ion-button expand="block" (click)="submit()" color="primary" style="height: 40px;font-size: 16px;" >确定</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
