@@ -1,5 +1,9 @@
 # 买买提APP
-客户端APP采用ionic angular框架开发，跨平台的，支持ios跟android。websocket采用protobuf作为通信协议。
+客户端APP采用ionic angular框架开发，跨平台的，支持ios跟android。
+
+采用JWT作为登录认证。
+
+websocket采用protobuf作为通信协议。
 
 
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/hot-page.png)
