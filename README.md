@@ -6,19 +6,19 @@
 websocket采用protobuf作为通信协议。
 
 
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/hot-page.png)
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/goods-detail-1.png)
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/goods-detail-2.png)
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/goods-detail-3.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/goods_list.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/goods_info.png)
  
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/consult-1.png)
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/consult-2.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/cuxiao.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/search.png)
  
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/confirm-order-1.png)
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/confirm-order-2.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/shop_list.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/shop_index.png)
  
- ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/order-list.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/chat_client.png)
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/session_list.png)
 
+ ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/project_picture/user_center.png)
 
 # 相关项目地址
 
