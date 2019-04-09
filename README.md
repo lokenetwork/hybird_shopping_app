@@ -16,7 +16,7 @@
  ![image](https://github.com/lokenetwork/hybird_shopping_app/blob/master/demo-picture/order-list.png)
 
 
-#相关项目地址
+# 相关项目地址
 
 PHP接口服务器：https://github.com/lokenetwork/shopping-php-server
 
